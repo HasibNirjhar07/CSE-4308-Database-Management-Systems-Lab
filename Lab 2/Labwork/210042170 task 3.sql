@@ -3,7 +3,7 @@ Insert into INSTRUCTOR VALUES(12121,'Wu','Finance',90000);
 Insert into INSTRUCTOR VALUES(15151,'Mozart','Music',40000);
 Insert into INSTRUCTOR VALUES(22222,'Einstein','Physics',95000);
 Insert into INSTRUCTOR VALUES(32343,'El Said','History',60000);
-Insert into INSTRUCTOR VALUES(3456,'Gold','Physics',87000);
+Insert into INSTRUCTOR VALUES(03456,'Gold','Physics',87000);
 Insert into INSTRUCTOR VALUES(45565,'Katz','Comp. Sci.',75000);
 Insert into INSTRUCTOR VALUES(58583,'Califieri','History',62000);
 Insert into INSTRUCTOR VALUES(76543,'Singh','Finance',80000);

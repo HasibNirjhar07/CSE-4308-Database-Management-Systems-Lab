@@ -1,0 +1,12 @@
+Insert into DOCTOR VALUES(10101,'Srinivasan','Comp. Sci.',DATE'10-07-2023');
+Insert into DOCTOR VALUES(12121,'Wu','Finance',DATE'8-09-2023');
+Insert into DOCTOR VALUES(15151,'Mozart','Music','7-08-2023');
+Insert into DOCTOR VALUES(22222,'Einstein','Physics',DATE'6-07-2023');
+Insert into PATIENT VALUES(32343,'El Said','History',DATE'20-07-2023');
+Insert into PATIENT VALUES(03456,'Gold','Physics',DATE'6-10-2023');
+Insert into PATIENT VALUES(45565,'Katz','Comp. Sci.',DATE'21-07-2023');
+Insert into PATIENT VALUES(58583,'Califieri','History',DATE'21-07-2023');
+Insert into APPOINTMENT_INFO VALUES(76543,'Singh','Finance',DATE'18-10-2023');
+Insert into APPOINTMENT_INFO VALUES(76766,'Crick','Biology',DATE'23-11-2023');
+Insert into APPOINTMENT_INFO VALUES(83821,'Brandt','Comp. Sci.',DATE'22-08-2023');
+Insert into APPOINTMENT_INFO VALUES(98345,'Kim','Elec. Eng.',DATE'27-10-2023');
