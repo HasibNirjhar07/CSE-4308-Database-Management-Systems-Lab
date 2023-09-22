@@ -1,60 +1,27 @@
--- Task 3
--- Create Roles
-
-CREATE ROLE STUDENT;
-
-CREATE ROLE COURSE_TEACHER;
-
-CREATE ROLE HOD;
-
-CREATE ROLE ADMINISTRATOR;
-
--- Grant basic Privileges to Roles
-
-GRANT CREATE SESSION TO STUDENT;
-
-GRANT CREATE SESSION TO COURSE_TEACHER;
-
-GRANT CREATE SESSION TO HOD;
-
-GRANT CREATE SESSION TO ADMINISTRATOR;
-
--- Grant Specified Privileges to Roles
-
-GRANT SELECT ON ADVISOR TO STUDENT;
-
-GRANT SELECT ON COURSE TO STUDENT;
-
-GRANT SELECT ON STUDENT TO COURSE_TEACHER;
-
-GRANT SELECT ON COURSE TO COURSE_TEACHER;
-
-GRANT SELECT ON STUDENT TO HOD;
-
-GRANT SELECT ON COURSE TO HOD;
-
-GRANT INSERT ON INSTRUCTOR TO HOD;
-
-GRANT SELECT, UPDATE ON DEPARTMENT TO ADMINISTRATOR;
-
-GRANT SELECT ON INSTRUCTOR TO ADMINISTRATOR;
-
--- Create Users
-
-CREATE USER STUDENT_USER IDENTIFIED BY student123;
-
-CREATE USER TEACHER_USER IDENTIFIED BY teacher123;
-
-CREATE USER HOD_USER IDENTIFIED BY hod123;
-
-CREATE USER ADMIN_USER IDENTIFIED BY admin123;
-
--- Assign Roles
-
-GRANT STUDENT TO STUDENT_USER;
-
-GRANT COURSE_TEACHER TO TEACHER_USER;
-
-GRANT HOD TO HOD_USER;
-
-GRANT ADMINISTRATOR TO ADMIN_USER;
+---task03---
+---task03(a)---
+drop role student_role;
+create role student_role;
+grant create session to student_role;
+grant select on course to student_role;
+grant select on Advisor_Selection to student_role;
+---task03(b)---
+drop role course_teacher;
+create role course_teacher;
+grant create session to course_teacher;
+grant select on course to course_teacher;
+grant select on student to course_teacher;
+---task03(c)---
+drop role head_dept;
+create role head_dept;
+grant create session to head_dept;
+grant course_teacher to head_dept;
+grant select on instructor to head_dept;
+grant insert on instructor to head_dept;
+---task03(d)---
+drop role administrator;
+create role administrator;
+grant create session to administrator;
+grant select on department to administrator;
+grant select on instructor to administrator;
+grant update(budget) on department to administrator;
